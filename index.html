@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./assets/Icon/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <!-- <script src="./main.js"></script> -->
+    <title>The Band</title>
+</head>
+<body>
+    <div class="header js-header">
+        <nav class="navigation">
+            <ul>
+                <li><a class="js-link" href="#">home</a></li>
+                <li><a class="js-link" href="#band">band</a></li>
+                <li><a class="js-link" href="#tour">tour</a></li>
+                <li><a class="js-link" href="#contact">contact</a></li>
+                <li>
+                    <a class="js-link" href="#more">
+                        more
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                    <ul class="navi-child">
+                        <li><a href="#merchandise">Merchandise</a></li>
+                        <li><a href="#extras">Extras</a></li>
+                        <li><a href="#media">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="search">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="bars js-bars">
+            <i class="fal fa-bars"></i>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="slider-contain">
+            <div id="js-sd1" class="slider js-slider">
+                <div class="text-slider">
+                    <h3>Chicago</h3>
+                    <p>Thank you, Chicago - A night we won't forget</p>
+                </div>
+            </div>
+            <div id="js-sd2" class="slider js-slider">
+                <div class="text-slider">
+                    <h3>New York</h3>
+                    <p>The atmosphere in New York is lorem ipsum.</p>
+                </div>
+            </div>
+            <div id="js-sd3" class="slider js-slider">
+                <div class="text-slider">
+                    <h3>Los Angeles </h3>
+                    <p> We had the best time playing at Venice Beach!</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="band" class="all-content">
+            <p>the band</p>
+            <p>We love music</p>
+            <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="list-member">
+                <div class="member">
+                    <p>Name</p>
+                    <img src="./assets/images/bandmember.jpg" alt="">
+                </div>
+                <div class="member">
+                    <p>Name</p>
+                    <img src="./assets/images/bandmember.jpg" alt="">
+                </div>
+                <div class="member">
+                    <p>Name</p>
+                    <img src="./assets/images/bandmember.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div id="tour" class="backgr-black">
+            <div class="all-content">
+                <p class="text-white" >tour dates</p>
+                <p class="text-center text-white" >Remember to book your tickets!</p>
+                <div class="tour-list">
+                    <ul>
+                        <li>September <span>Sold out</span></li>
+                        <li>October <span>Sold out</span></li>
+                        <li>
+                            November
+                            <span>3</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list-place">
+                    <div class="place">
+                        <img src="./assets/images/newyork.jpg" alt="">
+                        <div class="place-text">
+                            <p class="text-border">New York</p>
+                            <p class="text-opacity" >Fri 27 Nov 2016</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="js-open-buytickets" >Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="place">
+                        <img src="./assets/images/paris.jpg" alt="">
+                        <div class="place-text">
+                            <p class="text-border" >Paris</p>
+                            <p class="text-opacity" >Sat 28 Nov 2016</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="js-open-buytickets" >Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="place">
+                        <img src="./assets/images/sanfran.jpg" alt="">
+                        <div class="place-text">
+                            <p class="text-border" >San Francisco</p>
+                            <p class="text-opacity" >Sun 29 Nov 2016</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="js-open-buytickets" >Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="contact" class="all-content">
+            <p>contact</p>
+            <p class="text-center" >Fan? Drop a note!</p>
+            <div class="loca-form">
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>Chicago, US 
+                    <br>
+                    <i class="fas fa-phone-alt"></i>Phone: +00 151515 
+                    <br>
+                    <i class="fas fa-envelope"></i>Email: mail@mail.com
+                </div>
+                <div class="form">
+                    <form action="">
+                        <input class="text" type="text" required placeholder="Name" >
+                        <input class="email" type="email" required placeholder="Email" >
+                        <input class="message" type="text" required placeholder="Message">
+                        <button type="submit">SEND</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="map">
+            <img src="./assets/images/map.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="#facebook"><i class="fab fa-facebook-square"></i></a>
+        <a href="#instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#snapchat"><i class="fab fa-snapchat"></i></a>
+        <a href="#pinterest"><i class="fab fa-pinterest-p"></i></a>
+        <a href="#twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#linked"><i class="fab fa-linkedin-in"></i></a>
+        <p>Powered by <a href="#w3">w3.css</a></p>
+    </div>
+
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="header">
+                <h2>
+                    <i class="fas fa-suitcase"></i>
+                    tickets
+                </h2>
+                <i class="fas fa-times js-close"></i>
+            </div>
+            <div class="content">          
+                <label for="text"> 
+                    <i class="fas fa-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label> 
+                <input id="text" type="text" placeholder="How many?">
+                <label for="email">
+                    <i class="fas fa-user"></i>
+                    Send To
+                </label>  
+                <input id="email" type="email" placeholder="Enter email">
+                <button>
+                    PAY
+                    <i class="fas fa-check"></i>
+                </button>
+            </div>
+            <div class="modal-footer">
+                <button class="js-close">
+                    Close
+                    <i class="far fa-times"></i>
+                </button>
+                <p>Need <a href="#help">help?</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const Buybtns = document.getElementsByClassName("js-open-buytickets")
+        const modal = document.querySelector(".js-modal")
+        const closes = document.querySelectorAll(".js-close")
+        const modal_container = document.querySelector(".js-modal-container")
+        function openmodal(){
+            // modal.classList.add("open")  //Cách 1
+            modal.style.display = 'flex';
+        }
+        function closemodal(){
+            // modal.classList.remove("open")  //Cách 1
+            modal.style.display = 'none'; //Cách 2
+        }
+        for(const Buybtn of Buybtns){
+            Buybtn.addEventListener('click', openmodal)
+        }
+        for(const close of closes) {
+            close.addEventListener('click', closemodal)
+        }
+        modal.addEventListener('click', closemodal)
+        modal_container.addEventListener('click', function(event){
+            event.stopPropagation()
+        })
+
+        var myIndex = 0;
+        carousel();
+        function carousel() {
+            const x = document.getElementsByClassName("js-slider");
+            for (let i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 4000); 
+        }
+
+        var bars = document.querySelector(".js-bars");
+        var header = document.querySelector(".js-header");
+        var check = header.clientHeight;
+        var links = document.querySelectorAll(".js-link");
+        bars.onclick = function(){
+            var bool = header.clientHeight === check;
+            if(bool){
+                header.style.height = 'auto';
+            }else {
+                header.style.height = '46px';
+            }
+        }
+        for(var i = 0; i < links.length; i++){
+            links[i].onclick = function(){
+                header.style.height = '46px';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,661 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.open {
+    display: flex !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-border {
+    font-weight: bolder !important;
+}
+
+.text-opacity {
+    opacity: 0.6 !important;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+}
+
+.navigation {
+    background-color: #000;
+}
+
+.navigation ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+.navigation .navi-child {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
+    background-color: #fff;
+}
+
+.navigation .navi-child li a {
+    display: inline-block;
+    width: 128px;
+    color: #000;
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    text-transform: capitalize;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 8px 16px;
+}
+
+.navigation ul li a {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: "Lato", sans-serif;
+    color: #fff;
+}
+
+.navigation > ul > li:hover > a,
+.navigation .navi-child li a:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.navigation li:last-child:hover .navi-child {
+    display: block;
+}
+
+.header .search,
+.header .bars {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+.header .bars {
+    display: none;
+}
+
+.header .search .fas {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.header .search:hover {
+    color: #fff;
+    background-color: #f44336;
+}
+
+.slider-contain .slider:first-child {
+    background-image: url('/assets/slider/chicago.jpg');
+    padding-top: 50%;
+    width: 100%;
+    background-repeat: no-repeat;
+    margin-top: 46px;
+    background-size: contain;
+    position: relative;
+}
+
+.slider-contain .slider:nth-child(2) {
+    background-image: url('/assets/slider/ny.jpg');
+    padding-top: 50%;
+    width: 100%;
+    background-repeat: no-repeat;
+    margin-top: 46px;
+    background-size: contain;
+    position: relative;
+}
+
+.slider-contain .slider:last-child {
+    background-image: url('/assets/slider/la.jpg');
+    padding-top: 50%;
+    width: 100%;
+    background-repeat: no-repeat;
+    margin-top: 46px;
+    background-size: contain;
+    position: relative;
+}
+
+.slider-contain .slider .text-slider {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 35px;
+}
+
+.slider-contain .slider .text-slider h3 {
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 24px;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.slider-contain .slider .text-slider p {
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    color: #fff;
+    margin: 15px 0px;
+    font-weight: bolder;
+}
+
+.all-content {
+    max-width: 800px;
+    padding: 64px 16px;
+    margin: 0px auto;
+    box-sizing: border-box;
+}
+
+.all-content > p:first-child {
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0px;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.all-content > p:nth-child(2) {
+    opacity: 0.5;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    margin: 15px 0px;
+    text-align: center;
+    font-style: italic;
+}
+
+.all-content > p:nth-child(3) {
+    margin: 15px 0px;
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    text-align: justify;
+    color: #000;
+    line-height: 1.5;
+    word-spacing: -1px;
+}
+
+
+.list-member {
+    padding: 32px 0px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.list-member .member {
+    width: 31%;
+}
+
+.list-member .member img{
+    width: 60%;
+}
+
+.list-member .member p {
+    margin: 15px 0px;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: "Lato", sans-serif;
+
+}
+
+.backgr-black {
+    background-color: #000;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.all-content .tour-list {
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+.all-content .tour-list ul li {
+    list-style: none;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: "Lato", sans-serif;
+    position: relative;
+}
+
+.all-content .tour-list ul li:first-child span,
+.all-content .tour-list ul li:nth-child(2) span {
+    background-color: #F44336;
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    color: #fff;
+    padding: 2px 8px;
+    margin-left: 16px;
+}
+
+.all-content .tour-list li:last-child span {
+    position: absolute;
+    right: 40px;
+    background-color: #000;
+    color: #fff;
+    padding: 0px 8px;
+    border-radius: 50%;
+}
+
+.list-place {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0px;
+}
+
+.list-place .place {
+    width: 32%;
+} 
+
+.list-place .place img {
+    width: 100%;
+    display: block;
+}
+
+.list-place .place img:hover {
+    opacity: 0.6;
+}
+
+.place .place-text{
+    color: #000;
+    background-color: #fff;
+    padding: 0px 16px;
+}
+
+.place .place-text p{
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: "Lato", sans-serif;
+    padding: 15px 0px 0px;
+}
+
+.place .place-text button {
+    color: #fff;
+    background-color: #000;
+    padding: 8px 16px;
+    border: none;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 15px 0px;
+}
+
+.place .place-text button:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.loca-form {
+    display: flex;
+    padding: 32px 0px;
+    margin-bottom: 60px;
+}
+
+.loca-form .location {
+    width: 50%;
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+
+}
+
+.loca-form .location i {
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+.loca-form .form {
+    width: 50%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.form .text,
+.form .email {
+    width: 43%;
+}
+
+.form .text {
+    margin-right: 10px;
+}
+
+.form .message {
+    margin-top: 15px;
+    width: 95%;
+}
+
+.loca-form .form button {
+    color: #fff;
+    background-color: #000;
+    padding: 8px 16px;
+    border: none;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: "Lato", sans-serif;
+    position: absolute;
+    right: 0px;
+    top: 120%;
+}
+
+.loca-form .form button:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.map img {
+    width: 100%;
+    filter: grayscale(50%);
+}
+
+.footer {
+    padding: 64px 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.footer > a {
+    font-size: 23px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.footer > a:hover {
+    opacity: 0.7;
+} 
+
+.footer p {
+    margin: 15px 0px;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.footer p a {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+
+.modal-container {
+    max-width: calc(100% - 16px);
+    width: 900px;
+    animation: mykey ease 0.4s;
+    overflow: hidden;
+}
+
+@keyframes mykey {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-container .content {
+    background-color: #fff;
+    padding: 0px 16px;
+}
+
+.modal-container .content label {
+    display: block;
+    padding-top: 15px;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: "Lato", sans-serif;
+
+}
+
+.modal-container .content input {
+    margin-top: 15px;
+    padding: 8px;
+    width: 98%;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: "Lato", sans-serif;
+    border: 1px solid #ccc;
+}
+
+.modal-container .content button {
+    margin: 16px 0px;
+    padding: 16px;
+    color: #fff;
+    background-color: #009688;
+    width: 100%;
+    border: none;
+    line-height: 22px;
+}
+
+.modal-container .content button:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+}
+
+.modal-container .header {
+    color: #fff;
+    background-color: #009688;
+    padding: 32px 16px;
+    position: relative;
+}
+
+.modal-container .header h2 {
+    color: #fff;
+    font-size: 30px;
+    margin: 10px 0px;
+    letter-spacing: 4px;
+    text-transform:capitalize;
+    text-align: center;
+    font-weight: normal;
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+
+.modal-container .header > i {
+    position: absolute;
+    right: 30px;
+    top: 0px;
+    padding: 8px 16px;
+    height: 36px;
+    width: 14px;
+    font-size: 16px;
+    line-height: 36px;
+}
+
+.modal-container .header > i:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.modal-container .modal-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.modal-footer button {
+    color: #fff;
+    background-color: #f44336;
+    padding: 8px 16px;
+    border: none;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 20px;
+}
+
+.modal-footer button:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+}
+
+.modal-footer p {
+    margin: 20px;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: "Lato", sans-serif;
+}
+
+.modal-footer p a {
+    color: #2196F3;
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    .content {
+        overflow: hidden;
+    }
+    .all-content {
+        width: 768px;
+    }
+    .tour-list {
+        width: 736px;
+    }
+    .modal-container {
+        width: 500px;
+    }
+    .modal-container .header {
+        width: 93.5%;
+    }
+
+    .modal-container .header i {
+        right: 0px;
+    }
+
+    .modal-container {
+        transform: translateY(-50%);
+        animation: setup ease 0.4s;
+    }
+
+    @keyframes setup {
+        from {
+            opacity: 0;
+            transform: translateY(-200%);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+@media only screen and (max-width: 739px) {
+    .header {
+        height: 46px;
+        overflow: hidden;
+    }
+    .header .search {
+        display: none;
+    }
+    .header .bars {
+        display: block;
+        color: #fff;
+    }
+    .header .bars:hover {
+        color: #000 !important;
+        background-color: #ccc;
+    }
+    .navigation ul li:first-child {
+        width: 25%;
+    }
+    .navigation ul li,
+    .navigation ul li a {
+        display: block;
+    }
+    .text-slider {
+        display: none;
+    }
+    .list-member {
+        display: block;
+    }
+    .list-member .member {
+        width: 100%;
+    }
+    .list-place {
+        display: block;
+    }
+
+    .place .place-text button {
+        width: 100%;
+    }
+
+    .list-place .place {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .loca-form {
+        display: block;
+
+    }
+    .loca-form .location,
+    .loca-form .form {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .loca-form .form .text,
+    .loca-form .form .email {
+        width: 95%;
+    }
+    .all-content .form button {
+        width: 100%;
+    } 
+
+    .modal-container .header h2 {
+        width: 90%;
+    }
+
+}
+
+
+
+
+
