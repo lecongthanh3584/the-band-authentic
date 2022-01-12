@@ -346,6 +346,11 @@ html {
     position: relative;
 }
 
+.loca-form .form .half {
+    display: flex;
+    justify-content: space-between;
+}
+
 .form input {
     padding: 8px;
     border: 1px solid #ccc;
@@ -356,10 +361,6 @@ html {
 .form .text,
 .form .email {
     width: 43%;
-}
-
-.form .text {
-    margin-right: 10px;
 }
 
 .form .message {
@@ -559,7 +560,8 @@ html {
     color: #2196F3;
 }
 
-@media only screen and (min-width: 740px) and (max-width: 1023px) {
+@media only screen and (min-width: 740px) and (max-width: 1023px) 
+and (min-height: 415px){
     .content {
         overflow: hidden;
     }
@@ -598,7 +600,31 @@ html {
     }
 }
 
-@media only screen and (max-width: 739px) {
+@media only screen and (min-width: 416px) and (max-width: 813px)
+and (max-height: 415px) {
+    .modal-container {
+        width: 500px;
+        transform: translateY(15%);
+        animation: setup ease 0.4s;  
+    }
+    .modal {
+        overflow: scroll;
+    }
+
+    @keyframes setup {
+        from {
+            opacity: 0;
+            transform: translateY(-200%);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(15%);
+        }
+    }
+}
+
+/* @media only screen and (max-width: 739px) {  //trên điện thoại nhưng xoay ngang bị lỗi
     .header {
         height: 46px;
         overflow: hidden;
@@ -663,8 +689,77 @@ html {
         width: 90%;
     }
 
-}
+} */
 
+/*Phần này là tự chế*/
+@media only screen and (max-width: 415px){
+    .header {
+        height: 46px;
+        overflow: hidden;
+    }
+    .header .search {
+        display: none;
+    }
+    .header .bars {
+        display: block;
+        color: #fff;
+    }
+    .header .bars i {
+        line-height: 19px;
+    }
+    .header .bars:hover {
+        color: #000 !important;
+        background-color: #ccc;
+    }
+    .navigation ul li:first-child {
+        width: 25%;
+    }
+    .navigation ul li,
+    .navigation ul li a {
+        display: block;
+    }
+    .text-slider {
+        display: none;
+    }
+    .list-member {
+        display: block;
+    }
+    .list-member .member {
+        width: 100%;
+    }
+    .list-place {
+        display: block;
+    }
+
+    .place .place-text button {
+        width: 100%;
+    }
+
+    .list-place .place {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .loca-form, .loca-form .form .half {
+        display: block;
+
+    }
+    .loca-form .location,
+    .loca-form .form {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .loca-form .form .text,
+    .loca-form .form .email {
+        width: 95%;
+    }
+    .all-content .form button {
+        width: 100%;
+    } 
+
+    .modal-container .header h2 {
+        width: 90%;
+    }
+}
 
 
 
