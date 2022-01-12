@@ -18,14 +18,14 @@
                 <li><a class="js-link" href="#tour">tour</a></li>
                 <li><a class="js-link" href="#contact">contact</a></li>
                 <li>
-                    <a class="js-link" href="#more">
+                    <a href="#more">
                         more
                         <i class="fas fa-caret-down"></i>
                     </a>
                     <ul class="navi-child">
-                        <li><a href="#merchandise">Merchandise</a></li>
-                        <li><a href="#extras">Extras</a></li>
-                        <li><a href="#media">Media</a></li>
+                        <li><a class="js-link js-test" href="#merchandise">Merchandise</a></li>
+                        <li><a class="js-link js-test" href="#extras">Extras</a></li>
+                        <li><a class="js-link js-test" href="#media">Media</a></li>
                     </ul>
                 </li>
             </ul>
@@ -38,7 +38,7 @@
         </div>
     </div>
 
-    <div class="content">
+    <div id="js-content" class="content">
         <div class="slider-contain">
             <div id="js-sd1" class="slider js-slider">
                 <img src="./assets/slider/chicago.jpg" alt="">
@@ -163,7 +163,7 @@
         </div>
     </div>
 
-    <div class="footer">
+    <div id="js-footer" class="footer">
         <a href="#facebook"><i class="fab fa-facebook-square"></i></a>
         <a href="#instagram"><i class="fab fa-instagram"></i></a>
         <a href="#snapchat"><i class="fab fa-snapchat"></i></a>
@@ -249,6 +249,7 @@
         var header = document.querySelector(".js-header");
         var check = header.clientHeight;
         var links = document.querySelectorAll(".js-link");
+        var tests = document.getElementsByClassName("js-test");
         bars.onclick = function(){
             var bool = header.clientHeight === check;
             if(bool){
@@ -261,6 +262,18 @@
             links[i].onclick = function(){
                 header.style.height = '46px';
             }
+        }
+        for(var i = 0; i < tests.length; i++){
+            tests[i].onclick = function(){
+                alert("Mục này đang thử nghiệm, vui lòng quay lại sau!");
+                header.style.height = '46px';
+            }
+        }
+        document.getElementById("js-content").onclick = function(){
+            header.style.height = '46px';
+        }
+        document.getElementById("js-footer").onclick = function(){
+            header.style.height = '46px';
         }
     </script>
 </body>

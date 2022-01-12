@@ -81,6 +81,16 @@ html {
 .navigation li:last-child:hover .navi-child {
     display: block;
 }
+/* ------------------------- */
+
+.navigation li:last-child > a > i{
+    transition: all 0.5s ease;
+}
+.navigation li:last-child:hover > a > i{
+    transform: rotate(180deg);
+}
+
+/* -------------------------- */
 
 .header .search,
 .header .bars {
@@ -711,13 +721,30 @@ and (max-height: 415px) {
         color: #000 !important;
         background-color: #ccc;
     }
-    .navigation ul li:first-child {
+    .navigation > ul > li:first-child {
         width: 25%;
     }
     .navigation ul li,
     .navigation ul li a {
         display: block;
     }
+    .navigation .navi-child {
+        position: unset;
+        background-color: #333;
+    }
+
+    .navigation .navi-child li {
+        width: 100%;
+        color: #fff;
+    }
+
+    .navigation .navi-child li a {
+        width: 100%;
+        color: #fff;
+        padding: 12px 36px;
+        font-size: 17px;
+    }
+
     .text-slider {
         display: none;
     }
